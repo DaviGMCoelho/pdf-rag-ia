@@ -10,7 +10,17 @@ A solução lê arquivos PDF, gera embeddings de cada chunk do texto, armazena e
 - [Python 3.13.2](https://www.python.org/) → linguagem back-end
 - [LangChain](https://www.langchain.com/) → orquestração do pipeline RAG e execução do modelo 
 - [Chroma](https://www.trychroma.com/) → banco vetorial para armazenamento dos embeddings
-- Bibliotecas utilzadas → rag_project/requirements.txt
+- **Bibliotecas utilzadas:** Consulte requirements.txt
+
+---
+
+## 🏗️ Conceitos aplicados
+
+Durante o desenvolvimento deste projeto, foram aprimorados diversos conceitos de engenharia de software:
+
+- **SOLID**: Aplicação de Injeção de Dependência para modularidade e baixo acoplamento.
+- **Orientação a Objetos (OO)**: Arquitetura totalmente baseada em OO em Python, com classes bem definidas e responsabilidades claras.
+- **MVC (Model-View-Controller-Services)**: Estrutura em camadas para separação de responsabilidades, facilitando manutenção e escalabilidade.
 
 ---
 
@@ -18,15 +28,15 @@ A solução lê arquivos PDF, gera embeddings de cada chunk do texto, armazena e
 1. O usuário coloca um ou mais arquivos PDF na pasta 'documents'.  
 2. Os arquivos são transformados em texto.
 3. O texto é dividido em chunks e convertido em **embeddings** por um modelo de geração de embeddings específico **nomic-embed-text-v1.5-multimodal**.  
-4. Os embeddings são armazenados no **ChromaDB**.  
+4. Os embeddings são armazenados no **ChromaDB** (via **LangChain**).  
 5. Ao fazer uma pergunta, o sistema busca os trechos mais relevantes no banco vetorial.  
-6. O modelo LLM Ollama **Mistral** (via **LangChain**) gera a resposta usando os trechos recuperados como contexto.  
+6. O modelo LLM **Mistral** (via **LangChain**) gera a resposta usando os trechos recuperados como contexto.  
 
 ---
 
 ## 📥 Instalação
 
-Baixe os arquivos do projeto e execute na usa IDE ou
+Baixe os arquivos do projeto e execute na sua IDE ou
 
 Clone o repositório caso estiver com o Git instalado:
 
@@ -60,9 +70,9 @@ ollama pull DC1LEX/nomic-embed-text-v1.5-multimodal
 
 1. Coloque seus arquivos PDF na pasta documents/.
 2. Rode o programa na sua IDE
-3. Vá em adicionar novos documentos e aguarde terminar
+3. Vá em adicionar novos documentos e aguarde o processamento
 4. Vá em realizar perguntas e comece a usar
-5. Qualquer dúvida, consulte o manual de intruções ou me chama!
+5. Qualquer dúvida, consulte o manual de instruções ou me chama!
 
 ## 📂 Estrutura do projeto
 
