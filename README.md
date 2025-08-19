@@ -1,6 +1,6 @@
 # 📚 RAG com IA para leitura de PDFs
 
-Este projeto implementa um sistema de **Recuperação Aumentada por Geração (RAG)**, combinando **LangChain** e **ChromaDB** para permitir consultas inteligentes em documentos PDF.  
+Este projeto implementa um sistema de **Geração Aumentada por Recuperação (RAG)**, combinando **LangChain** e **ChromaDB** para permitir consultas inteligentes em documentos PDF.  
 
 A solução lê arquivos PDF, gera embeddings de cada chunk do texto, armazena em um banco vetorial (**Chroma**), e utiliza um modelo LLM rodando no **LangChain** para responder perguntas com base no conteúdo dos documentos.
 
